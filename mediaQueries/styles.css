@@ -1,0 +1,154 @@
+/* Element Selector */
+body {
+  margin: 0 auto;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  font-size: 17px;
+  line-height: 1.6em;
+  background-color: gray;
+}
+h1 {
+  font-size: 50px;
+}
+/* Class Selector */
+.black-border {
+  border: 5px solid black;
+}
+
+/* Id Selector */
+#green-background {
+  background-color: green;
+  padding: 20px;
+  color: rgb(255, 255, 255);
+}
+
+.blue-border {
+  border: 5px double blue;
+  font-family: fantasy;
+  color: rgb(245, 177, 4);
+  background-color: black;
+  padding: 20px 30px 50px 50px;
+  font-size: 12px;
+}
+
+#black-background {
+  background-color: black;
+  font-size: 40px;
+  padding: 20px;
+}
+
+.white-color {
+  color: white;
+}
+
+.second-text {
+  color: brown;
+  border: dashed;
+  background-color: cadetblue;
+}
+
+/* Part 2 */
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&family=Teko:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=BhuTuka+Expanded+One&family=League+Gothic&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=BhuTuka+Expanded+One&family=League+Gothic&family=Merriweather:wght@700&display=swap");
+
+header {
+  border: 2px groove white;
+  background-color: red;
+  color: white;
+  font-family: Playfair Display;
+  font-size: 20px;
+}
+
+main {
+  border: 8px dashed rgb(91, 107, 22);
+  margin: 10px;
+  background-color: rgb(57, 247, 231);
+  color: black;
+  font-family: Teko;
+  padding: 15px;
+}
+ul {
+  list-style: none;
+  color: rgb(255, 0, 0);
+  font-family: "Times New Roman", Times, serif;
+  letter-spacing: 0.5em;
+}
+
+/* Part 3 */
+.horizontal li {
+  display: inline;
+  letter-spacing: normal;
+}
+
+/* Media Queries */
+/* Part 1 */
+/* My answer: the appearance changes, the position and all elements follow the size. changed because @mediaQuerie  */
+
+/* Part 2 */
+
+@media (min-width: 1024px) {
+  body {
+    background-color: black;
+    line-height: 50px;
+  }
+  h1 {
+    font-size: 50px;
+  }
+  main {
+    background-color: rgb(117, 75, 75);
+    border: 8px solid salmon;
+    color: seashell;
+    font-family: monospace;
+  }
+  .second-text {
+    background-color: rgb(117, 75, 75);
+    color: rgb(252, 122, 0);
+  }
+  #green-background {
+    background-color: brown;
+  }
+  .black-border {
+    background-color: brown;
+  }
+  .blue-border {
+    background-color: rgb(42, 147, 165);
+    color: rgb(10, 0, 0);
+    font-family: BhuTuka Expanded One;
+    font-size: 18px;
+  }
+  header {
+    background-color: black;
+  }
+  ul {
+    color: rgb(74, 196, 129);
+    letter-spacing: normal;
+    font-size: 20px;
+  }
+  .white-color {
+    color: crimson;
+    font-family: Merriweather;
+    font-size: 18px;
+  }
+}
+
+/* Testing gray Block */
+
+@media not (min-width: 768px) {
+  h1 {
+    font-size: 60px;
+  }
+}
+
+@media (min-width: 320px) {
+  h1 {
+    font-size: 10px;
+  }
+}
+
+@media (min-width: 800px) {
+  h1 {
+    font-size: 100px;
+  }
+}
